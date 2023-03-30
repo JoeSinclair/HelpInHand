@@ -10,11 +10,12 @@ import SwiftUI
 @main
 struct HelpInHandApp: App {
     let persistenceController = PersistenceController.shared
-
+    let organisationStore = OrganisationStore()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(organisationStore)
         }
     }
 }
