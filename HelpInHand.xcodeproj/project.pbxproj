@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D600532F29D651FA00F854A7 /* AddOrganisationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D600532E29D651FA00F854A7 /* AddOrganisationView.swift */; };
 		D620566329D5E0BF00D496BF /* OrganisationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D620566229D5E0BF00D496BF /* OrganisationsView.swift */; };
 		D620566529D5E15800D496BF /* Organisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D620566429D5E15800D496BF /* Organisation.swift */; };
 		D620566829D5F20700D496BF /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D620566729D5F20700D496BF /* NavigationBarView.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D600532E29D651FA00F854A7 /* AddOrganisationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrganisationView.swift; sourceTree = "<group>"; };
 		D620566229D5E0BF00D496BF /* OrganisationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganisationsView.swift; sourceTree = "<group>"; };
 		D620566429D5E15800D496BF /* Organisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organisation.swift; sourceTree = "<group>"; };
 		D620566729D5F20700D496BF /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			children = (
 				D620566429D5E15800D496BF /* Organisation.swift */,
 				D620566229D5E0BF00D496BF /* OrganisationsView.swift */,
+				D600532E29D651FA00F854A7 /* AddOrganisationView.swift */,
 			);
 			path = Organisations;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 			files = (
 				D662085129D596C900C42A11 /* Persistence.swift in Sources */,
 				D620566529D5E15800D496BF /* Organisation.swift in Sources */,
+				D600532F29D651FA00F854A7 /* AddOrganisationView.swift in Sources */,
 				D662084A29D596C700C42A11 /* ContentView.swift in Sources */,
 				D662085429D596C900C42A11 /* HelpInHand.xcdatamodeld in Sources */,
 				D620566329D5E0BF00D496BF /* OrganisationsView.swift in Sources */,

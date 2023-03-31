@@ -11,6 +11,7 @@ import SwiftUI
 struct HelpInHandApp: App {
     let persistenceController = PersistenceController.shared
     let organisationStore = OrganisationStore()
+    let selectedCharity = "*Selected Organisation*"
     
     var body: some Scene {
         WindowGroup {

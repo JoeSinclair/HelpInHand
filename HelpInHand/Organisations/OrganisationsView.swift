@@ -9,14 +9,18 @@ import SwiftUI
 
 struct OrganisationListView: View {
     var organisations: [Organisation]
-    @State var selectedOrganisation = "*Selected Organisation*"
+    @State var selectedOrganisation = "selectedOrganisation"
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
-                Text("\(selectedOrganisation)")
-                    .font(.caption)
-                    .foregroundColor(.secondary)
+                HStack {
+                    Text("\(selectedOrganisation)")
+                        .font(.caption)
+                        .foregroundColor(.secondary)
+                        .padding(.leading)
+                    Spacer()
+                }
                 GeometryReader { geo in
                     ScrollView {
                         VStack(spacing: 16){
@@ -34,9 +38,9 @@ struct OrganisationListView: View {
                     }
                 }
             }
-            .navigationBarTitle(Text("Organisations").font(.largeTitle), displayMode: .inline)
+            .navigationBarTitle(Text("Organisations").font(.largeTitle))
             .navigationBarItems(trailing: Button(action: {
-                // Button action here
+                //
             }, label: {
                 Image(systemName: "plus")
             }))

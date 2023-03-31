@@ -22,11 +22,11 @@ struct ContentView: View {
                     .tabItem {
                         Image(systemName: "1.circle")
                     }
-                OrganisationListView(organisations: organisations)
+                Text("Screen 2")
                     .tabItem {
                         Image(systemName: "2.circle")
                     }
-                    .tabViewStyle(/*@START_MENU_TOKEN@*/DefaultTabViewStyle()/*@END_MENU_TOKEN@*/)
+                    .tabViewStyle(DefaultTabViewStyle())
                 
             }
         }
