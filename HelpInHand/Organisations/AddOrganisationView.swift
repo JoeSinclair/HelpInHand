@@ -8,33 +8,29 @@
 import SwiftUI
 
 struct AddOrganisationView: View {
-    @State var isPresented = false
+    @Binding var isPresented: Bool
     
     var body: some View {
-        NavigationView {
-            VStack {
-                Spacer()
-                Text("Request New Organisation")
-                    .font(.largeTitle)
-                    .fontWeight(.bold)
-                    .padding(.all)
-                Button {
-                    self.isPresented = false
-                    //add random
-                    //go back to prev screen
-                } label: {
-                    Text("Request")
-                }.buttonStyle(DefaultButtonStyle())
-                    .padding(.all)
-                Spacer()
-                Spacer()
-            }
+        VStack {
+            Spacer()
+            Text("Request New Organisation")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                .padding(.all)
+            Button {
+                isPresented = false
+            } label: {
+                Text("Request")
+            }.buttonStyle(DefaultButtonStyle())
+                .padding(.all)
+            Spacer()
+            Spacer()
         }
     }
 }
 
 struct AddOrganisationView_Previews: PreviewProvider {
     static var previews: some View {
-        AddOrganisationView()
+        AddOrganisationView(isPresented: .constant(false))
     }
 }

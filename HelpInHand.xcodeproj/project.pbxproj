@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D600532F29D651FA00F854A7 /* AddOrganisationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D600532E29D651FA00F854A7 /* AddOrganisationView.swift */; };
+		D600533129D9BF5B00F854A7 /* OrganisationDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D600533029D9BF5B00F854A7 /* OrganisationDetailsView.swift */; };
 		D620566329D5E0BF00D496BF /* OrganisationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D620566229D5E0BF00D496BF /* OrganisationsView.swift */; };
 		D620566529D5E15800D496BF /* Organisation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D620566429D5E15800D496BF /* Organisation.swift */; };
 		D620566829D5F20700D496BF /* NavigationBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D620566729D5F20700D496BF /* NavigationBarView.swift */; };
@@ -17,9 +18,6 @@
 		D662084F29D596C900C42A11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D662084E29D596C900C42A11 /* Preview Assets.xcassets */; };
 		D662085129D596C900C42A11 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662085029D596C900C42A11 /* Persistence.swift */; };
 		D662085429D596C900C42A11 /* HelpInHand.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D662085229D596C900C42A11 /* HelpInHand.xcdatamodeld */; };
-		D662085F29D596C900C42A11 /* HelpInHandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662085E29D596C900C42A11 /* HelpInHandTests.swift */; };
-		D662086929D596C900C42A11 /* HelpInHandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662086829D596C900C42A11 /* HelpInHandUITests.swift */; };
-		D662086B29D596C900C42A11 /* HelpInHandUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662086A29D596C900C42A11 /* HelpInHandUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		D600532E29D651FA00F854A7 /* AddOrganisationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrganisationView.swift; sourceTree = "<group>"; };
+		D600533029D9BF5B00F854A7 /* OrganisationDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganisationDetailsView.swift; sourceTree = "<group>"; };
 		D620566229D5E0BF00D496BF /* OrganisationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrganisationsView.swift; sourceTree = "<group>"; };
 		D620566429D5E15800D496BF /* Organisation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organisation.swift; sourceTree = "<group>"; };
 		D620566729D5F20700D496BF /* NavigationBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarView.swift; sourceTree = "<group>"; };
@@ -53,10 +52,7 @@
 		D662085329D596C900C42A11 /* HelpInHand.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HelpInHand.xcdatamodel; sourceTree = "<group>"; };
 		D662085529D596C900C42A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D662085A29D596C900C42A11 /* HelpInHandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelpInHandTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D662085E29D596C900C42A11 /* HelpInHandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpInHandTests.swift; sourceTree = "<group>"; };
 		D662086429D596C900C42A11 /* HelpInHandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelpInHandUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D662086829D596C900C42A11 /* HelpInHandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpInHandUITests.swift; sourceTree = "<group>"; };
-		D662086A29D596C900C42A11 /* HelpInHandUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpInHandUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +83,11 @@
 		D620566629D5E2C400D496BF /* Organisations */ = {
 			isa = PBXGroup;
 			children = (
+				D620566729D5F20700D496BF /* NavigationBarView.swift */,
 				D620566429D5E15800D496BF /* Organisation.swift */,
 				D620566229D5E0BF00D496BF /* OrganisationsView.swift */,
 				D600532E29D651FA00F854A7 /* AddOrganisationView.swift */,
+				D600533029D9BF5B00F854A7 /* OrganisationDetailsView.swift */,
 			);
 			path = Organisations;
 			sourceTree = "<group>";
@@ -98,8 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				D662084629D596C700C42A11 /* HelpInHand */,
-				D662085D29D596C900C42A11 /* HelpInHandTests */,
-				D662086729D596C900C42A11 /* HelpInHandUITests */,
 				D662084529D596C700C42A11 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,7 +121,6 @@
 				D662085529D596C900C42A11 /* Info.plist */,
 				D662085029D596C900C42A11 /* Persistence.swift */,
 				D662084D29D596C900C42A11 /* Preview Content */,
-				D620566729D5F20700D496BF /* NavigationBarView.swift */,
 			);
 			path = HelpInHand;
 			sourceTree = "<group>";
@@ -136,23 +131,6 @@
 				D662084E29D596C900C42A11 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		D662085D29D596C900C42A11 /* HelpInHandTests */ = {
-			isa = PBXGroup;
-			children = (
-				D662085E29D596C900C42A11 /* HelpInHandTests.swift */,
-			);
-			path = HelpInHandTests;
-			sourceTree = "<group>";
-		};
-		D662086729D596C900C42A11 /* HelpInHandUITests */ = {
-			isa = PBXGroup;
-			children = (
-				D662086829D596C900C42A11 /* HelpInHandUITests.swift */,
-				D662086A29D596C900C42A11 /* HelpInHandUITestsLaunchTests.swift */,
-			);
-			path = HelpInHandUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +269,7 @@
 				D662084A29D596C700C42A11 /* ContentView.swift in Sources */,
 				D662085429D596C900C42A11 /* HelpInHand.xcdatamodeld in Sources */,
 				D620566329D5E0BF00D496BF /* OrganisationsView.swift in Sources */,
+				D600533129D9BF5B00F854A7 /* OrganisationDetailsView.swift in Sources */,
 				D620566829D5F20700D496BF /* NavigationBarView.swift in Sources */,
 				D662084829D596C700C42A11 /* HelpInHandApp.swift in Sources */,
 			);
@@ -300,7 +279,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D662085F29D596C900C42A11 /* HelpInHandTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,8 +286,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D662086929D596C900C42A11 /* HelpInHandUITests.swift in Sources */,
-				D662086B29D596C900C42A11 /* HelpInHandUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
